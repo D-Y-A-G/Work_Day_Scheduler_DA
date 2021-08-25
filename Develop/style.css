@@ -1,5 +1,5 @@
 body {
-  font-family: "Marcellus", serif;
+  font-family: "Marcellus", serif; /* can use !important as a attribute at the end to override */
   font-size: 16px;
   line-height: 1;
 }
@@ -72,4 +72,55 @@ textarea {
 
 #currentDay {
   color: rgb(49, 0, 209);
+}
+
+h1 {
+  background-color: tomato;
+  opacity: 90%;
+  color: white;
+  text-shadow: 3px 3px black;
+}
+textarea {
+  width: 80%;
+}
+
+tr .everyHour {
+  text-align: left;
+  font-weight: bolder;
+  color: brown;
+}
+
+.btns {
+  background-color: royalblue;
+  font-size: 35px;
+}
+
+table,
+th,
+td {
+  border: black 2px solid;
+}
+
+textarea:hover {
+  transform: scale(1.01);
+  width: 100%;
+  background-color: rgb(195, 195, 195);
+  width: 800px;
+}
+
+textarea {
+  width: 800px;
+}
+
+.btns {
+  width: 100px;
+  background-color: royalblue;
+}
+
+span {
+  font-weight: bolder;
+  color: darkblue;
+  margin-right: 35px;
+  align-content: center;
+  text-align: center;
 }

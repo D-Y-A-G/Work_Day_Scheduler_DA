@@ -1,7 +1,7 @@
 body {
   font-family: "Marcellus", serif; /* can use !important as a attribute at the end to override */
   font-size: 16px;
-  line-height: 1;
+  line-height: 0.75;
 }
 
 textarea {
@@ -10,7 +10,10 @@ textarea {
   resize: none;
   color: #000000;
   border-left: 1px solid black;
-  padding: 10px;
+  padding: none;
+  font-weight: bolder;
+  width: 900px;
+  margin: 0;
 }
 
 .jumbotron {
@@ -84,8 +87,6 @@ h1 {
   text-shadow: 3px 3px black;
 }
 textarea {
-  width: 80%;
-  font-weight: bolder;
 }
 
 table,
@@ -93,7 +94,6 @@ th,
 td {
   /*border: black 2px solid; --- this border helps reference table to check how items are placed*/
   border-top: 2px black solid;
-  margin-bottom: 0;
 }
 
 textarea:hover {
@@ -105,13 +105,12 @@ textarea:hover {
 }
 
 textarea {
-  width: 800px;
 }
 
 span {
   font-weight: bolder;
   color: darkblue;
-  margin-right: 35px;
+  margin-right: 25px;
   align-content: center;
   text-align: center;
 }

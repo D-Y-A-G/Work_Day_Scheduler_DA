@@ -10,7 +10,7 @@ textarea {
   resize: none;
   color: #000000;
   border-left: 1px solid black;
-  padding: none;
+  padding: 20px;
   font-weight: bolder;
   width: 900px;
   margin: 0;
@@ -72,8 +72,11 @@ textarea {
 }
 
 .saveBtn i:hover {
-  font-size: 20px;
+  font-size: 35px;
   transition: all 0.3s ease-in-out;
+}
+button #savEvent {
+  transform: scale(1.25);
 }
 
 #currentDay {
@@ -86,25 +89,17 @@ h1 {
   color: white;
   text-shadow: 3px 3px black;
 }
-textarea {
-}
 
 table,
 th,
 td {
   /*border: black 2px solid; --- this border helps reference table to check how items are placed*/
   border-top: 2px black solid;
-}
-
-textarea:hover {
-  transform: scale(1.01);
-  width: 100%;
-  background-color: rgb(195, 195, 195);
-  width: 800px;
-  cursor: crosshair;
-}
-
-textarea {
+  margin-left: 20px;
+  text-align: center;
+  align-content: center;
+  line-height: 1rem;
+  padding-bottom: 0%;
 }
 
 span {

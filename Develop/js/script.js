@@ -5,25 +5,32 @@ document.getElementById("currentDay").textContent = now; // try query selector
 
 // write with current hour past and future and highlights based on color red now green future gray past
 var hours = {
-  8: $("hourBlock"),
-  9: $("hourBlock"),
-  10: $("hourBlock"),
-  11: $("hourBlock"),
-  12: $("hourBlock"),
-  1: $("hourBlock"),
-  2: $("hourBlock"),
-  3: $("hourBlock"),
-  4: $("hourBlock"),
+  eightAm: $("hourBlock"),
+  nineAm: $("hourBlock"),
+  tenAm: $("hourBlock"),
+  elevenAm: $("hourBlock"),
+  twelveAm: $("hourBlock"),
+  OnePm: $("hourBlock"),
+  twoPm: $("hourBlock"),
+  threePm: $("hourBlock"),
+  fourPm: $("hourBlock"),
 };
-// write function that states time that has passed and references classes in css 
+// write function that states time that has passed and references classes in css
 
 var hourly = moment().format("h:m");
 console.log(hourly);
 
-$(".hourBlock").each(function(){
-  var currentHour = $(this).data("time");
+$(".hourBlock").each(function () {
+  var currentHour = $(this).data("hours");
 
-})
+  if (currentHour === hourly) {
+    $(this).attr("class", "present");
+  } else if (currentHour > hourly) {
+    $(this).attr("class", "future");
+  } else {
+    $(this).attr("past");
+  }
+});
 
 $(document).ready(function () {
   console.log(hourly);
@@ -35,10 +42,10 @@ $(".time-block").each(function () {});
 $(".saveBtn").on("click", function (event) {
   event.preventDefault();
   var timeBlock = $(this).parent().prev().children();
-  //localStorage.setItem("content", timeBlock);
-  //localStorage.getItem("content");
+  localStorage.setItem(timeBlock, "textarea");
+  localStorage.getItem("timeBlock");
 
-  console.log(timeBlock[0].val);
+  //console.log(timeBlock[0].val); to check value
 });
 
 //// local storage set and get item
